@@ -31,3 +31,14 @@ module "vpc" {
 
   tags = var.vpc_tags
 }
+
+module "ec2_instance" {
+  source          = "./modules/compute"
+  security_group = module.security_group.sg_id
+  public_subnets  = module.vpc.public_subnets
+}
+
+module "security_group" {
+  source = "./modules/security_group"
+  vpc_id    = module.vpc.vpc_id
+}

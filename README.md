@@ -22,5 +22,11 @@ In this tutorial, you will create several AWS resources in a single configuratio
 - Create a new `main.tf` file in the `security_group` directory.
 - Create a new `outputs.tf` file to capture your security group ID.
 
+### Update configuration with modules
+- Navigate to the root of your project directory.
+- `cd ../..`
+- Open the `main.tf` file and add the new module blocks to the end of your configuration.
+- Update the `outputs.tf` file in the root directory.
+
 ### Reference
 https://learn.hashicorp.com/tutorials/terraform/move-config?in=terraform/modules
