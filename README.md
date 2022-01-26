@@ -28,5 +28,9 @@ In this tutorial, you will create several AWS resources in a single configuratio
 - Open the `main.tf` file and add the new module blocks to the end of your configuration.
 - Update the `outputs.tf` file in the root directory.
 
+### Review planned changes
+- Next, reinitialize your configuration to install the newly created modules.
+- Your module changes would delete and recreate your resources, which causes service interruptions in your infrastructure.
+
 ### Reference
 https://learn.hashicorp.com/tutorials/terraform/move-config?in=terraform/modules
