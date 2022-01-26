@@ -36,5 +36,12 @@ In this tutorial, you will create several AWS resources in a single configuratio
 - In your root `main.tf` file, add moved configuration blocks.
 - Re-apply your configuration to move your resources into your new modules.
 
+### Rename and move a resource
+- You can also use the moved configuration block to rename existing resources.
+- Rename your `vpc` module, and update the references to it in the rest of your configuration.
+- Add the `moved` block for your VPC changes at the bottom of the file.
+- `terraform init`
+- `terraform apply`
+
 ### Reference
 https://learn.hashicorp.com/tutorials/terraform/move-config?in=terraform/modules
