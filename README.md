@@ -32,5 +32,9 @@ In this tutorial, you will create several AWS resources in a single configuratio
 - Next, reinitialize your configuration to install the newly created modules.
 - Your module changes would delete and recreate your resources, which causes service interruptions in your infrastructure.
 
+### Move your resources with the moved configuration block
+- In your root `main.tf` file, add moved configuration blocks.
+- Re-apply your configuration to move your resources into your new modules.
+
 ### Reference
 https://learn.hashicorp.com/tutorials/terraform/move-config?in=terraform/modules
