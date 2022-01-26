@@ -43,5 +43,7 @@ In this tutorial, you will create several AWS resources in a single configuratio
 - `terraform init`
 - `terraform apply`
 
+![image](https://user-images.githubusercontent.com/33342822/151153648-4bc494bb-0648-40d3-b1b5-e2cccdef2e6d.png)
+
 ### Reference
 https://learn.hashicorp.com/tutorials/terraform/move-config?in=terraform/modules
